@@ -1,0 +1,106 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridLayout ) {
+			"columns": 1
+			"rows": 6
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :5:5:p, comp label1:::p::p, space ::175:x, comp textField1:::p:36:p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :5:5:p, par b {comp label1::b:p::p, comp textField1::b:p::p}, space :p:13:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Температура нейтрального слоя"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"text": "11"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField1ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :5:5:p, comp label2:::p::p, space ::158:x, comp textField2:::p:37:p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :5:5:p, par b {comp label2::b:p::p, comp textField2::b:p::p}, space :p:13:p}}"
+			} ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Статическая температура на забое"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+					"text": "100"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField2ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :5:5:p, comp label3:::p::p, space ::107:x, comp textField3:::p:36:p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :5:5:p, par b {comp label3::b:p::p, comp textField3::b:p::p}, space :p:13:p}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Температура выходящего бурового раствора"
+					"labelFor": new FormReference( "textField3" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+					"text": "45"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField3ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :5:5:p, comp label4:::p::p, space ::152:x, comp textField4:::p:36:p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :5:5:p, par b {comp label4::b:p::p, comp textField4::b:p::p}, space :p:13:p}}"
+			} ) {
+				name: "panel4"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Температура затворяемого раствора"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+					"text": "15"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField4ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :5:5:p, comp label5:::p::p, space ::265:x, comp textField5:::p:38:p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :5:5:p, par b {comp label5::b:p::p, comp textField5::b:p::p}, space :p:13:p}}"
+			} ) {
+				name: "panel5"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Глубина забоя"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField5"
+					"text": "3000"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField5ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :5:5:p, comp label6:::p::p, space ::148:x, comp textField6:::p::p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :5:5:p, par b {comp label6::b:p::p, comp textField6::b:p::p}, space :p:13:p}}"
+			} ) {
+				name: "panel6"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Динамическая температура на забое"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField6"
+					"preferredSize": new java.awt.Dimension( 40, 20 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 260 )
+		} )
+	}
+}
